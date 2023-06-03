@@ -41,7 +41,7 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                {/* <img
                                     className="block h-30px w-30px lg:hidden"
                                     src={'/assets/logo/Logo.svg'}
                                     alt="Courses-Logo"
@@ -50,13 +50,14 @@ const Navbar = () => {
                                     className="hidden h-48px w-48px lg:block"
                                     src={'/assets/logo/Logo.svg'}
                                     alt="Courses-Logo"
-                                />
+                                /> */}
+                                <h4 className='font-bold tracking-tight text-gray-900 my-4 text-[#fe8704] text-center'>NOBBY <br /> TRANSPORT</h4>
                             </div>
 
                             {/* LINKS */}
 
                             <div className="hidden sm:ml-14 md:block">
-                                <div className="flex space-x-4">
+                                <div className="flex space-x-4 items-center h-[82px]">
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
@@ -77,12 +78,12 @@ const Navbar = () => {
 
                         {/* SIGNIN DIALOG */}
 
-                        <Signdialog />
+                        {/* <Signdialog /> */}
 
 
                         {/* REGISTER DIALOG */}
 
-                        <Registerdialog />
+                        {/* <Registerdialog /> */}
 
 
                         {/* DRAWER FOR MOBILE VIEW */}

@@ -98,13 +98,13 @@ export default class MultipleItems extends Component {
                     <Slider {...settings}>
                             {postData.map((items, i) => (
                             <div key={i}>
-                                <div className='bg-white m-4 pt-8 px-12 pb-10 text-center rounded-lg'>
+                                <div className='bg-white m-4 pt-8 px-12 pb-10 text-center rounded-lg bg-[#fff9e7]'>
                                 <div className='relative'>
                                     {items.icon}
                                   
                                 </div>
                                 <h3 className='text-sm pt-4 pb-2'>{items.profession}</h3>
-                                <h4 className='text-2xl font-semibold pb-3 text-[#2c2c2c]'>{items.name}</h4>
+                                <h4 className='text-2xl font-semibold pb-3 text-[#fe8704]'>{items.name}</h4>
                            
                                 <p className='text-lg font-medium leading-9'>{items.detail}</p>
                                 </div>
