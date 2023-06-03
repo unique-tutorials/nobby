@@ -6,7 +6,6 @@ interface Product {
     href: string;
     imageSrc: string;
     imageAlt: string;
-    color: string;
 }
 
 const products: Product[] = [
@@ -16,7 +15,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/nusret.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Shoo Thar Mein',
     },
     {
         id: 2,
@@ -24,7 +22,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/a101.png',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Cristian Doru Barin',
     },
     {
         id: 3,
@@ -32,7 +29,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/beymen.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Tanzeel Ur Rehman',
     },
     {
         id: 4,
@@ -40,7 +36,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/netlog.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Andrew Williams',
     },
     {
         id: 5,
@@ -48,7 +43,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/dinamik.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Brad Schiff',
     },
     {
         id: 6,
@@ -56,7 +50,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/defacto.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Daniel Walter Scott',
     },
     {
         id: 7,
@@ -64,7 +57,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/dolce.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Daniel Walter Scott',
     },
     {
         id: 7,
@@ -72,7 +64,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/koc.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Daniel Walter Scott',
     },
     {
         id: 7,
@@ -80,7 +71,6 @@ const products: Product[] = [
         href: '#',
         imageSrc: '/assets/mentor/sendeo.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        color: 'Daniel Walter Scott',
     },
 ]
 
@@ -88,19 +78,19 @@ const Mentor = () => {
     return (
             <div id="mentors-section" className="mx-auto max-w-2xl pb-16 px-4 sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8">
 
-                <div className='sm:flex justify-between items-center mb-12'>
-                    <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 my-4">Referanslarımız</h2>
-                    <div>
+                <div className='sm:flex justify-between items-center mb-4'>
+                    <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 my-4 text-[#fe8704]">Referanslarımız</h2>
+                    {/* <div>
                         <button className="bg-transparent hover:bg-purple text-purple font-medium hover:text-white py-3 px-4 border border-lightgrey hover:border-transparent rounded">
                             Tümünü Gör
                         </button>
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
                     {products.map((product) => (
                         <div key={product.id} className="group relative">
-                            <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80 border border-[#f0efef]">
+                            <div className="min-h-40 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-40 border border-[#f0efef]">
                                 <img
                                     src={product.imageSrc}
                                     alt={product.imageAlt}
@@ -117,7 +107,6 @@ const Mentor = () => {
                                             </a>
                                         </h3>
                                     </div>
-                                    <p className="mt-3 text-2xl font-semibold text-white text-center">{product.color}</p>
                                 </div>
                             </div>
                         </div>

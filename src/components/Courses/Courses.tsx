@@ -64,11 +64,11 @@ const NamesList = () => {
                         className="h-full w-full object-cover object-center"
                     />
                 </div>
-                <p aria-hidden="true" className="mt-2 text-2xl font-semibold ">
+                <p aria-hidden="true" className="mt-2 text-xl font-normal text-[#fe8704]">
                     {name.profession}
                 </p>
                 <div className='flex justify-between'>
-                    <div className="mt-6 block font-normal text-gray-900">
+                    <div className="mt-6 block font-normal text-lg text-gray-900">
                         {name.course}
                     </div>
                 </div>
@@ -97,19 +97,19 @@ const NamesList = () => {
         <div>
             <div id='courses-section' className="mx-auto max-w-2xl py-16 px-4 sm:py-36 sm:px-6 lg:max-w-7xl lg:px-8">
 
-                <div className='sm:flex justify-between items-center pb-12'>
-                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 my-4">Hizmetlerimiz</h2>
-                    <div>
+                <div className='sm:flex justify-between items-center'>
+                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 my-4 text-[#fe8704]">Hizmetlerimiz</h2>
+                    {/* <div>
                         <button className="bg-transparent hover:bg-purple text-purple font-medium hover:text-white py-3 px-4 border border-purple hover:border-transparent rounded">
                             Explore Classes
                         </button>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='flex nowhitespace space-x-5 rounded-xl bg-white p-1 overflow-x-auto'>
 
                     {/* FOR DESKTOP VIEW */}
-                    <button onClick={() => setSelectedButton('webdevelopment')} className={"bg-white " + (selectedButton === 'webdevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Web Development</button>
+                    <button onClick={() => setSelectedButton('webdevelopment')} className={"bg-white " + (selectedButton === 'webdevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}></button>
                     {/* <button onClick={() => setSelectedButton('mobiledevelopment')} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Mobile Development</button>
                     <button onClick={() => setSelectedButton('datascience')} className={"bg-white " + (selectedButton === 'datascience' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Data Science</button>
                     <button onClick={() => setSelectedButton('cloudcomputing')} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Cloud Computing</button> */}
@@ -124,7 +124,7 @@ const NamesList = () => {
 
                 <div>
                     <div className="mx-auto max-w-7xl">
-                        <div className="grid grid-cols-1 gap-y-10 gap-x-8 py-12">
+                        <div className="grid grid-cols-1 gap-y-10 gap-x-8 py-4">
                             <div className="col-start-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8">
                                 {nameElements.length > 0 ? (
                                     nameElements

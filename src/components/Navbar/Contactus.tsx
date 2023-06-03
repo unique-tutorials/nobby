@@ -43,12 +43,12 @@ const Contactusform = () => {
             <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto md:ml-6 sm:pr-0">
             <div className='md:hidden'>
                     <button type="button" className='text-15px font-medium' onClick={openModal}>
-                        Contact Us
+                        Bize Ulaş
                     </button>
                 </div>
                 <div className='hidden md:block'>
                     <button type="button" className='text-15px font-medium space-links' onClick={openModal}>
-                        Contact Us
+                        Bize Ulaş
                     </button>
                 </div>
             </div>
