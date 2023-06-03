@@ -82,7 +82,7 @@ export default class MultipleItems extends Component {
 
         return (
             <div id="testimonial-section" className='bg-bgpink bg-newsletter'>
-                <div className="mx-auto max-w-2xl px-4 pt-16 pb-64 sm:pt-32 lg:max-w-7xl lg:px-8">
+                <div className="mx-auto max-w-2xl px-10 pt-16 pb-24 sm:pt-10 lg:max-w-7xl lg:px-10">
 
                     <div className='sm:flex justify-between items-center pb-6'>
                         <h2 className="text-3xl sm:text-4xl w-full font-bold tracking-tight text-center text-gray-900 my-4 text-[#fe8704]">Bizi Özel Yapan Nedir? </h2>

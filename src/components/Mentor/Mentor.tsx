@@ -100,7 +100,7 @@ const Mentor = () => {
                 <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
                         <div key={product.id} className="group relative">
-                            <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80 border border-[#d9d9d9]">
+                            <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80 border border-[#f0efef]">
                                 <img
                                     src={product.imageSrc}
                                     alt={product.imageAlt}
@@ -109,7 +109,7 @@ const Mentor = () => {
                             </div>
                             <div className="mt-4 flex justify-center ">
                                 <div>
-                                    <div className='border border-white rounded-lg -mt-8 bg-white p-2 mentorShadow'>
+                                    <div className='border border-white rounded-lg -mt-8 bg-white p-2 mentorShadow text-orange-x font-semibold'>
                                         <h3 className="text-sm text-gray-700 text-center">
                                             <a href={product.href}>
                                                 <span aria-hidden="true" className="absolute inset-0" />

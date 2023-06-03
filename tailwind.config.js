@@ -21,11 +21,12 @@ module.exports = {
       'orange': '#F9CD92',
       'grey500': '#ECECEC',
       'bgpink': "#FCF5EF",
-      'bgpurple': '#451F49',
-      'emailbg': '#6a4c6d',
+      'bgpurple': '#ed761e',
+      'emailbg': '#ffffff',
       'offwhite': ' #FDFDFD',
       'offblack' :'#333333',
-      'red' : '#FF605C'
+      'red' : '#FF605C',
+      'orange-x':'#ed771d',
     },
     fontFamily: {
       'inter': ['Inter', "sans-serif"]
