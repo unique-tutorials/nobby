@@ -86,6 +86,8 @@ html:not([data-scroll="0"]) .navbar {
 
 .footer-icons{
   transition: .5s;
+  background-color: #ff9140;
+  border-radius: 20px;
 }
 
 .footer-icons:hover{

@@ -22,7 +22,6 @@ export default function Home() {
       <main>
         <Navbar />
         <MainSlider />
-        <Companies />
         <Tabs />
         <Students />
         <Mentor />

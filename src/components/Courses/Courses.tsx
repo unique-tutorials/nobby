@@ -7,122 +7,27 @@ interface Name {
     course: string;
     imageSrc: string;
     profession: string
-    price: string
     category: 'mobiledevelopment' | 'webdevelopment' | 'datascience' | 'cloudcomputing';
 }
 
 const names: Name[] = [
     {
-        course: 'HTML, CSS, JS',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'HTML, CSS, Javascript Development',
-        price: '40',
+        course: 'Klasik kargoculuğun dışında tüm sektördeki firmalara özel hizmet ağımız ve yenilikçi bakış açımız ile özel teslimat hizmeti veriyoruz.',
+        imageSrc: '/assets/courses/kargo-hizmeti.JPG',
+        profession: 'Kargo Hizmeti',
         category: 'webdevelopment'
     },
     {
-        course: 'Node.js',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Backend with Node.js and Express.js',
-        price: '21',
+        course: 'Sabit araçlı kurye hizmetimiz ile firma taleplerine göre soğuk zincir de dahil olmak üzere her alanda aylık ve yıllık olarak özel teslimat modeli hizmeti veriyoruz.',
+        imageSrc: '/assets/courses/sabit-aracli-kurye.jpg',
+        profession: 'Sabit Araçlı Kurye',
         category: 'webdevelopment'
     },
     {
-        course: 'Database',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Learn Mongodb with Mongoose',
-        price: '21',
+        course: 'Nobby Transport olarak ülke genelindeki tüm AVM’ lere ilgili teslimata uygun tüm araçlar ile özel dağıtımlar yapmaktadır',
+        imageSrc: '/assets/courses/avm-lojistigi.jpg',
+        profession: 'Avm Lojistiği',
         category: 'webdevelopment'
-    },
-    {
-        course: 'React.js',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'Learn React with Redux toolkit',
-        price: '99',
-        category: 'webdevelopment'
-    },
-    {
-        course: 'React Native',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'Learn React Native with Node.js',
-        price: '89',
-        category: 'mobiledevelopment'
-    },
-    {
-        course: 'Swift',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Learn Swift from Scratch',
-        price: '89',
-        category: 'mobiledevelopment'
-    },
-    {
-        course: 'Flutter',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'Flutter App Development',
-        price: '69',
-        category: 'mobiledevelopment'
-    },
-    {
-        course: 'Onsen UI',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Learn Onsen Ui with HTML, CSS',
-        price: '69',
-        category: 'mobiledevelopment'
-    },
-    {
-        course: 'TensorFlow',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Learn TensorFlow with SQL',
-        price: '99',
-        category: 'datascience'
-    },
-    {
-        course: 'AWS',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'AWS Deep Learning AMI',
-        price: '99',
-        category: 'datascience'
-    },
-    {
-        course: 'Bokeh',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'Learn Bokeh with Python',
-        price: '99',
-        category: 'datascience'
-    },
-    {
-        course: 'Scikit',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Scikit with Python Development',
-        price: '89',
-        category: 'datascience'
-    },
-    {
-        course: 'Laas',
-        imageSrc: '/assets/courses/coursesThree.svg',
-        profession: 'Infra-as-a-Service',
-        price: '21',
-        category: 'cloudcomputing'
-    },
-    {
-        course: 'Iaas',
-        imageSrc: '/assets/courses/coursesFour.svg',
-        profession: 'Info-as-a-Service',
-        price: '29',
-        category: 'cloudcomputing'
-    },
-    {
-        course: 'Paas',
-        imageSrc: '/assets/courses/coursesOne.svg',
-        profession: 'Platform-as-a-Service',
-        price: '99',
-        category: 'cloudcomputing'
-    },
-    {
-        course: 'Saas',
-        imageSrc: '/assets/courses/coursesTwo.svg',
-        profession: 'Software-as-a-Service',
-        price: '58',
-        category: 'cloudcomputing'
     }
 ];
 
@@ -159,19 +64,17 @@ const NamesList = () => {
                         className="h-full w-full object-cover object-center"
                     />
                 </div>
+                <p aria-hidden="true" className="mt-2 text-2xl font-semibold ">
+                    {name.profession}
+                </p>
                 <div className='flex justify-between'>
                     <div className="mt-6 block font-normal text-gray-900">
                         {name.course}
                     </div>
-                    <div className="mt-6 block text-lg font-semibold text-green border-solid border-2 border-green rounded-md px-1">
-                        ${name.price}
-                    </div>
                 </div>
-                <p aria-hidden="true" className="mt-2 mb-5 text-2xl font-semibold ">
-                    {name.profession}
-                </p>
+          
 
-                <div className='flex justify-between border-solid border-2 border-grey500 rounded-md p-2'>
+                {/* <div className='flex justify-between border-solid border-2 border-grey500 rounded-md p-2'>
                     <p>12 Classes</p>
                     <div className='flex flex-row space-x-4'>
                         <div className='flex'>
@@ -183,7 +86,7 @@ const NamesList = () => {
                             <p className='ml-1'>4.5</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>
@@ -195,7 +98,7 @@ const NamesList = () => {
             <div id='courses-section' className="mx-auto max-w-2xl py-16 px-4 sm:py-36 sm:px-6 lg:max-w-7xl lg:px-8">
 
                 <div className='sm:flex justify-between items-center pb-12'>
-                    <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 my-4">Popular Courses</h2>
+                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 my-4">Hizmetlerimiz</h2>
                     <div>
                         <button className="bg-transparent hover:bg-purple text-purple font-medium hover:text-white py-3 px-4 border border-purple hover:border-transparent rounded">
                             Explore Classes
@@ -207,22 +110,22 @@ const NamesList = () => {
 
                     {/* FOR DESKTOP VIEW */}
                     <button onClick={() => setSelectedButton('webdevelopment')} className={"bg-white " + (selectedButton === 'webdevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Web Development</button>
-                    <button onClick={() => setSelectedButton('mobiledevelopment')} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Mobile Development</button>
+                    {/* <button onClick={() => setSelectedButton('mobiledevelopment')} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Mobile Development</button>
                     <button onClick={() => setSelectedButton('datascience')} className={"bg-white " + (selectedButton === 'datascience' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Data Science</button>
-                    <button onClick={() => setSelectedButton('cloudcomputing')} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Cloud Computing</button>
+                    <button onClick={() => setSelectedButton('cloudcomputing')} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}>Cloud Computing</button> */}
 
                     {/* FOR MOBILE VIEW */}
                     <GlobeAltIcon onClick={() => setSelectedButton('webdevelopment')} width={70} height={70} className={"bg-white " + (selectedButton === 'webdevelopment' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
-                    <DevicePhoneMobileIcon onClick={() => setSelectedButton('mobiledevelopment')} width={70} height={70} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
+                    {/* <DevicePhoneMobileIcon onClick={() => setSelectedButton('mobiledevelopment')} width={70} height={70} className={"bg-white " + (selectedButton === 'mobiledevelopment' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
                     <CircleStackIcon onClick={() => setSelectedButton('datascience')} width={70} height={70} className={"bg-white " + (selectedButton === 'datascience' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
-                    <CloudIcon onClick={() => setSelectedButton('cloudcomputing')} width={70} height={70} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} />
+                    <CloudIcon onClick={() => setSelectedButton('cloudcomputing')} width={70} height={70} className={"bg-white " + (selectedButton === 'cloudcomputing' ? 'border-b-2 border-orange fill-orange' : '') + " pb-2 block sm:hidden"} /> */}
 
                 </div>
 
                 <div>
                     <div className="mx-auto max-w-7xl">
                         <div className="grid grid-cols-1 gap-y-10 gap-x-8 py-12">
-                            <div className="col-start-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8">
+                            <div className="col-start-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8">
                                 {nameElements.length > 0 ? (
                                     nameElements
                                 ) : (

@@ -21,7 +21,7 @@ module.exports = {
       'orange': '#F9CD92',
       'grey500': '#ECECEC',
       'bgpink': "#FCF5EF",
-      'bgpurple': '#ed761e',
+      'bgpurple': '#ffc825',
       'emailbg': '#ffffff',
       'offwhite': ' #FDFDFD',
       'offblack' :'#333333',
