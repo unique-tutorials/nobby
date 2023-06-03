@@ -7,6 +7,7 @@ import Mentor from '../components/Mentor/Mentor'
 import Students from '../components/Students/Students'
 import Newsletter from '../components/Newsletter/Newsletter'
 import Footer from '../components/Footer/Footer'
+import MainSlider from '@/components/Swiper/MainSlider'
 
 
 export default function Home() {
@@ -20,12 +21,11 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Banner />
+        <MainSlider />
         <Companies />
         <Tabs />
-        <Mentor />
         <Students />
-        <Newsletter />
+        <Mentor />
         <Footer />
       </main>
     </>
