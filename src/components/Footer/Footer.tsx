@@ -31,7 +31,7 @@ const products: ProductType[] = [
     {
         id: 1,
         icon: <MdLocationOn size={28} className="m-auto" />,
-        detail: "Adnan kahveci Mah. Kuştepe Cad. Sedef sok No.1A Beylikdüzü/İstanbul"
+        detail: "Üçevler Mahallesi Pazaryolu Caddesi 101/A Esenyurt İSTANBUL"
     },
     {
         id:2,
