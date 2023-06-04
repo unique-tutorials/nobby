@@ -98,7 +98,7 @@ const NamesList = () => {
             <div id='courses-section' className="mx-auto max-w-2xl py-16 px-4 sm:py-28 sm:px-6 lg:max-w-7xl lg:px-8">
 
                 <div className='sm:flex justify-between items-center'>
-                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 my-4 text-[#fe8704]">Hizmetlerimiz</h2>
+                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 my-4 max-lg:my-0 text-[#fe8704]">Hizmetlerimiz</h2>
                     {/* <div>
                         <button className="bg-transparent hover:bg-purple text-purple font-medium hover:text-white py-3 px-4 border border-purple hover:border-transparent rounded">
                             Explore Classes
@@ -106,7 +106,7 @@ const NamesList = () => {
                     </div> */}
                 </div>
 
-                <div className='flex nowhitespace space-x-5 rounded-xl bg-white p-1 overflow-x-auto'>
+                <div className='flex nowhitespace space-x-5 rounded-xl bg-white overflow-x-auto'>
 
                     {/* FOR DESKTOP VIEW */}
                     <button onClick={() => setSelectedButton('webdevelopment')} className={"bg-white " + (selectedButton === 'webdevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + " pb-2 text-lg hidden sm:block"}></button>

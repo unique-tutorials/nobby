@@ -98,7 +98,7 @@ export default class MultipleItems extends Component {
                     <Slider {...settings}>
                             {postData.map((items, i) => (
                             <div key={i}>
-                                <div className='bg-white m-4 pt-8 px-12 pb-10 text-center rounded-lg bg-[#fff9e7]'>
+                                <div className='bg-white m-4 pt-8 px-12 max-lg:px-3 pb-10 text-center rounded-lg bg-[#fff9e7]'>
                                 <div className='relative'>
                                     {items.icon}
                                   

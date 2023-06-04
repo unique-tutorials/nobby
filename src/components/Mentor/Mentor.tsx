@@ -72,6 +72,13 @@ const products: Product[] = [
         imageSrc: '/assets/mentor/sendeo.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
     },
+    {
+        id: 8,
+        name: 'Borusan',
+        href: '#',
+        imageSrc: '/assets/mentor/borusan.JPG',
+        imageAlt: "Front of men's Basic Tee in black.",
+    },
 ]
 
 const Mentor = () => {
